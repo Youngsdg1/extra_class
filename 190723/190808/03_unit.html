@@ -1,0 +1,31 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <style>
+     /* selector {
+         property-name: property-value;
+     } */
+     /* 이렇게 쓰는것도 기억해라. .box1 모든 element중에 box class가진애고, div.box1은 디비전안에 있는 box1을 말함 */
+    /* em: 부모 요소의 해당 property-name의 property-value unit*/
+     div.box1 {
+        font-size: 30px;
+     }
+     /* 부모에게 똑같은 property가 있어야 해당되는거임 */
+     div.box2 {
+        font-size: 0.1em;
+     }
+     /* rem은 다 필요 없고, 브라우저 기본 font-size */
+     /* %도 em이랑 같이 내 ㄷ위에껄 보는것임. % 랑 em이랑 같은걸로 보셈 */
+ </style>
+</head>
+<body>
+    <div class="box1">
+        Hi
+        <div class="box2">
+            Bye
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+      border: black solid 1px;
+    }
+    .parent {
+      width: 150px;
+      height: 150px;
+      background: red;
+      /* 이걸 말하면 주황색(양 옆 쫙 먹는 마진)을 없애주는거임 */
+      display: inline-block;
+
+    }
+    .child {
+      width: 100px;
+      height: 100px;
+      background: yellow;
+      padding: 30px;
+    }
+    .ib {
+      display: inline-block;
+      /* 얘네는 컨텐트만 건드리는 요소. */
+      width: 150px;
+      height: 150px;
+      /* position이라는 property가 따로 있는거고, 뭐 이런거 알면 됨 */
+      position: static/relative/absolute/fixed
+    }
+
+  
+  </style>
+</head>
+<body>
+<!-- inline, block, inline-block -->
+<div class="parent">
+  <div class="child">
+    child
+  </div>
+  <div></div>
+</div>
+
+</body>
+</html>
+
+
